@@ -30,7 +30,8 @@
 
 <!-- Welcome Section -->
 <section class="welcome-container mx-auto my-8 p-5 bg-blur backdrop-blur rounded-lg shadow-lg flex items-center" style="width: 850px; height: 20rem;">
-  <img src="src/Pics/profile.png" alt="Profile Image" class=" relative right-[-60vh] h-[30vh] w-[25vh] rounded-full mr-4">
+  <!-- svelte-ignore a11y-img-redundant-alt -->
+  <img src="src/Pics/profile.png" alt="Profile Image" class="relative right-[-60vh] h-[30vh] w-[25vh] rounded-full mr-4">
   <h2 class="text-white text-2xl font-cambriafont-semibold relative right-[25vh] top-[-10vh]">Welcome to My Portfolio <br> <span class="text-[3rem] font-cambria  ">Hello I'm Xyrell Dave</span><br></h2>
 
 
