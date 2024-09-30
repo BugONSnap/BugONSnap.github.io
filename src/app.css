@@ -103,8 +103,9 @@ img {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 1rem;
 }
 
 .grid-item {
@@ -126,5 +127,78 @@ img {
         left: 0;
         width: 100%;
         justify-content: center;
+    }
+}
+
+
+/* Large screens */
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    header {
+        left: 25%;
+        width: 50%;
+        justify-content: space-between;
+    }
+    .welcome-container {
+        width: 800px;
+        height: 30rem;
+    }
+    .welcome-container img {
+        height: 50vh;
+        width: 30vh;
+    }
+}
+
+
+/* Medium screens */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    header {
+        left: 10%;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .welcome-container {
+        width: 600px;
+        height: 25rem;
+    }
+    .welcome-container img {
+        height: 40vh;
+        width: 25vh;
+    }
+}
+
+
+/* Small screens */
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin-top: 10rem;
+    }
+    header {
+        left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .welcome-container {
+        width: 100%;
+        height: auto;
+    }
+    .welcome-container img {
+        height: 50vh;
+        width: 30vh;
+    }
+    .flex-col {
+        flex-direction: column;
+        position: relative;
+        left: 0%;
+        width: 50rem;
     }
 }

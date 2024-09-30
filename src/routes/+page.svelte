@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Button } from 'flowbite-svelte';
-  import '../app.css'; // Ensure TailwindCSS is imported
+  import { BugSolid } from 'flowbite-svelte-icons';
+  import '../app.css'; 
 
   function scrollToSection(sectionId: string) {
     const section = document.getElementById(sectionId);
@@ -19,43 +20,103 @@
 <!-- Header -->
 <header class="relative left-[25%] flex justify-between items-center w-[50%] p-2 bg-transparent text-white" style="z-index: 3;">
   <div>
-    <h1 class="text-3xl font-cambriafont-semibold">Xyrell Dave Pamintuan</h1>
+    <!-- svelte-ignore a11y-missing-content -->
+    <h1 class="text-3xl font-cambriafont-semibold"></h1>
   </div>
   <div>
-    <Button class="bg-black text-white py-2 px-4 rounded-full mx-2" on:click={() => scrollToSection('profile-section')}>Profile</Button>
-    <Button class="bg-black text-white py-2 px-4 rounded-full mx-2" on:click={() => scrollToSection('projects-section')}>Projects</Button>
-    <Button class="bg-black text-white py-2 px-4 rounded-full mx-2" on:click={() => scrollToSection('contacts-section')}>Contacts</Button>
+    <Button class=" text-white py-2 px-4 rounded-full mx-2" on:click={() => scrollToSection('profile-section')}></Button>
+    <Button class=" text-white py-2 px-4 rounded-full mx-2" on:click={() => scrollToSection('projects-section')}></Button>
+    <Button class=" text-white py-2 px-4 rounded-full mx-2" on:click={() => scrollToSection('contacts-section')}></Button>
   </div>
 </header>
 
 <!-- Welcome Section -->
-<section class="welcome-container mx-auto my-8 p-5 bg-blur backdrop-blur rounded-lg shadow-lg flex items-center" style="width: 850px; height: 20rem;">
+<section class="welcome-container relative top-[5rem] border-2 border-pink-500 mx-auto my-8 p-5 bg-blur-500 backdrop-blur rounded-lg shadow-lg flex items-center" style="width: 800px; height: 30rem;">
   <!-- svelte-ignore a11y-img-redundant-alt -->
-  <img src="src/Pics/prof.png" alt="Profile Image" class="relative right-[-60vh] h-[30vh] w-[25vh] rounded-full mr-4">
-  <h2 class="text-white text-2xl font-cambriafont-semibold relative right-[25vh] top-[-10vh]">Welcome to My Portfolio <br> <span class="text-[3rem] font-cambria  ">Hello I'm Xyrell Dave</span><br></h2>
+  <img src="src/Pics/smile-.png" alt="Profile Image" style="background-image: url('src/Pics/bg1.jpg');"  class="relative top-[-.5vh] left-[59vh] h-[50vh] w-[30vh] rounded-full mr-4">
+  <h2 class="text-white text-2xl font-cambriafont-semibold relative right-[20vh] top-[-1vh]">
+    Good Day! Everyone Im  <br> 
+    <span class="text-[3rem] font-cambria"> Xyrell Dave Pamintuan</span><br> 
+    Im a <span class="text-blue-500">FrontEnd Developer</span> and a <span class="text-blue-500">Cybersecurity Enthusiast</span><br><br>
 
-
+    <button class=" text-blue-500" on:click={() => scrollToSection('profile-section' )}> Wanna know more about me? </button><br> 
+    <span class="text-white"> What are my </span>
+    <button class="text-blue-500" on:click={() => scrollToSection('projects-section')}>Projects? </button><br> 
+    <span class="text-white"> What are my </span>
+    <button class="text-blue-500" on:click={() => scrollToSection('contacts-section')}>Contacts?</button> 
+  </h2>
 </section>
 
 <!-- Main Content -->
-<main class="grid-container p-4" style="z-index: 3;">
+<main class="flex flex-col p-4 " style="color:white; z-index: 3;">
   <!-- Profile Section -->
-  <section id="profile-section" class=" grid-item my-8 bg-transparent bg-opacity-80 p-4 rounded-lg shadow-lg">
-    <h2 class="text-3xl mb-4 font-cambriafont-semibold">Profile</h2>
-    <p>Details about the profile...</p>
+  <section id="profile-section" class=" mb-[20rem] relative top-[30vh] my-8 bg-transparent bg-opacity-80 p-4 rounded-lg shadow-lg">
+    <h2 class="text-[4rem] mb-4 font-cambria font-semibold text-center">~PROFILE~</h2>
+    <p class="text-center text-[5rem] font-cambriafont-bold text-pink-500 ">~1~</p>
+    <p class="text-center text-[1.5rem] font-cambria">My name is <span class="text-pink-500 text-[2rem] font-bold font-cambria underline">Xyrell Dave Pamintuan</span>, and over the past few years, I have immersed myself in various programming languages and frameworks, ranging from <span class="text-pink-500 text-[2rem] font-bold font-cambria "> HTML and CSS to PHP, Angular, Type Script, Java Script, and Python</span>. I began my coding journey through online tutorials and crash courses, constantly seeking to expand my knowledge. I have taken numerous online courses that provided me with practical skills in web development and software engineering. This hands-on learning approach has allowed me to continuously develop and refine my abilities, driven by a passion for technology and innovation.</p>
+    <p class="text-center text-[5rem] font-cambriafont-bold text-pink-500 ">~2~</p>
+
+    <p class="text-center text-[2rem]"> I specialize in Front-End Development, with experience working with technologies like <span class="text-pink-500 text-[2rem] font-bold font-cambria underline">HTML, CSS, JavaScript, TypeScript, and frameworks such as Angular</span>. I am passionate about creating dynamic and responsive web applications that provide excellent user experiences. While my focus is on front-end technologies, I also have a background in backend development. Recently, I worked on a project that involved integrating a backend system, allowing me to gain hands-on experience with RESTful APIs and basic server-side logic. Currently, I'm working on projects that push my expertise in front-end development while exploring backend functionality.</p>
+    <p class="text-center text-[5rem] font-cambriafont-bold text-pink-500 ">~3~</p>
+
+    <p class="text-center text-[2rem]">I am a dedicated and detail-oriented Front-End Developer with a strong foundation in web development. I thrive on turning complex design concepts into clean, efficient code and have a passion for creating user-friendly applications. I am committed to continuous learning and staying up-to-date with the latest technologies and best practices in the field. I am eager to bring my skills and enthusiasm to a dynamic team and contribute to the development of innovative web applications.</p>
+    <p class="text-center text-[5rem] font-cambriafont-bold text-pink-500 ">~4~</p>
+    <p class="text-center text-[2rem]">Outside of development, I'm passionate about Souls games and Souls-like titles, with Dark Souls and Elden Ring being some of my favorites. I enjoy the challenge and depth these games offer. I'm also deeply into competitive gaming, always striving to improve and compete at higher levels. Alongside gaming, I'm an avid music addict, constantly exploring new genres and sounds that fuel my creativity and relaxation.</p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects-section" class="grid-item my-8 bg-transparent bg-opacity-80 p-4 rounded-lg shadow-lg">
-    <h2 class="bg-transparent text-3xl mb-4 font-cambriafont-semibold">Projects</h2>
-    <p>Details about the projects...</p>
+  <section id="projects-section" class="my-8 bg-transparent bg-opacity-80 p-4 rounded-lg shadow-lg">
+    <h2 class="text-[4rem] mb-4 font-cambria font-semibold text-center">~PROJECTS~</h2>
+    <p class="text-center text-[2rem]">I have worked on several projects that have allowed me to apply my skills in real-world scenarios. Here are some of the key projects I've undertaken</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <div class="bg-blur-500 p-6 rounded-lg shadow-lg text-center">
+        <BugSolid class="mx-auto mb-4 h-12 w-12 text-pink-500" />
+        <h3 class="text-3xl font-semibold text-white">Zentre Blog</h3>
+        <p class="text-white text-[1.5rem] mt-2">Zentre Blog is a Blogging Project that lets you create blogs and share it to your friends and family. It utilizes <span class="text-blue-500">Angular Framework</span>, <span class="text-blue-500">RestApi PHP</span> & <span class="text-blue-500">MySQL</span> to create a blog app.</p>
+        <a href="https://github.com/BugONSnap/projectt" class=" text-blue-500 text-[1.5rem] mt-4 inline-block">Go to →</a>
+      </div>
+      <div class="bg-blur-500 p-6 rounded-lg shadow-lg text-center">
+        <BugSolid class="mx-auto mb-4 h-12 w-12 text-pink-500" />
+        <h3 class="text-3xl font-semibold text-white">Zentre Movies</h3>
+        <p class="text-white text-[1.5rem] mt-2">Zentre Movies is a movie app that allows a user to search for their favorite movies and tv shows. It utilizes <span class="text-blue-500">Vanilla HTML, CSS, & JavaScript</span> & <span class="text-blue-500">The Movie Database</span>.</p>
+        <a href="https://github.com/BugONSnap/HCI-Final-Project" class=" text-blue-500 text-[1.5rem] mt-4 inline-block">Go to →</a>
+      </div>
+      <div class="bg-blur-500 p-6 rounded-lg shadow-lg text-center">
+        <BugSolid class="mx-auto mb-4 h-12 w-12 text-pink-500" />
+        <h3 class="text-3xl font-semibold text-white">ZenLibrary</h3>
+        <p class="text-white text-[1.5rem] mt-2">ZenLibrary is a Library Management System that allows a user to manage their library. It utilizes  <span class="text-blue-500">Vanilla HTML, CSS, & JavaScript</span> & <span class="text-blue-500">PHP</span> & <span class="text-blue-500">MySQL</span>.With a <span class="text-blue-500">CRUD</span> Functionality.</p>
+        <a href="https://github.com/BugONSnap/ZenLibrary" class=" text-blue-500 text-[1.5rem] mt-4 inline-block">Go to →</a>
+      </div>
+    </div>
   </section>
 
   <!-- Contacts Section -->
-  <section id="contacts-section" class="grid-item my-8 bg-transparent bg-opacity-80 p-4 rounded-lg shadow-lg">
-    <h2 class="text-3xl mb-4 font-semibold">Contacts</h2>
-    <p>Details about the contacts...</p>
+  <section id="contacts-section" class="my-8 bg-transparent bg-opacity-80 p-4 rounded-lg shadow-lg">
+    <h2 class="text-[4rem] mb-4 font-cambria font-semibold text-center">~CONTACTS~</h2>
+    <p class="text-center text-[2rem]">You can contact me through my socials below!</p>
+    <div class="flex justify-center mt-8">
+      <span class="text-white"> | </span>
+      <span class="text-white"> | </span>
+      <div class="flex flex-col items-center mx-4">
+        
+        <BugSolid class="h-8 w-8 text-blue-500" />
+        <span class="text-white text-[1.5rem]">@BugONSnap</span>
+        <a href="https://github.com/BugONSnap" class="text-blue-500 text-[2rem] mx-2 inline-block">GitHub</a>
+      </div>
+      <span class="text-white"> | </span>
+      <div class="flex flex-col items-center mx-4">
+        <BugSolid class="h-8 w-8 text-blue-500" />
+        <span class="text-white text-[1.5rem]">@xyrell_dave</span>
+        <a href="https://www.instagram.com/xyrell_dave/" class="text-blue-500 text-[2rem] mx-2 inline-block">Instagram</a>
+      </div>
+      <span class="text-white"> | </span>
+      <div class="flex flex-col items-center mx-4">
+        <BugSolid class="h-8 w-8 text-blue-500" />
+        <span class="text-white text-[1.5rem]">Xyrell Dave</span>
+        <a href="https://www.facebook.com/profile.php?id=100010366622228" class="text-blue-500 text-[2rem] mx-2 inline-block">Facebook</a>
+      </div>
+      <span class="text-white"> | </span>
+      <span class="text-white"> | </span>
+    </div>
   </section>
 </main>
-
-
