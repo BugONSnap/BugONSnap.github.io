@@ -71,7 +71,7 @@
         <BugSolid class="mx-auto mb-4 h-12 w-12 text-pink-500" />
         <h3 class="text-3xl font-semibold text-white">ZenLibrary</h3>
         <p class="text-white text-[1.5rem] mt-2">ZenLibrary is a Library Management System that allows a user to manage their library. It utilizes  <span class="text-blue-500">Vanilla HTML, CSS, & JavaScript</span> & <span class="text-blue-500">PHP</span> & <span class="text-blue-500">MySQL</span>.With a <span class="text-blue-500">CRUD</span> Functionality.</p>
-        <a href="https://github.com/BugONSnap/ZenLibrary" class=" text-blue-500 text-[1.5rem] mt-4 inline-block">Go to →</a>
+        <a href="https://github.com/BugONSnap/Zenlibrary" class=" text-blue-500 text-[1.5rem] mt-4 inline-block">Go to →</a>
       </div>
     </div>
   </section>
@@ -94,13 +94,13 @@
       <div class="flex flex-col items-center mx-4">
 
        
-        <a href="https://www.instagram.com/xyrell_dave/" class="text-blue-500 text-[2rem] mx-2 inline-block">Instagram</a>
+        <a href="https://www.instagram.com/xaidave/" class="text-blue-500 text-[2rem] mx-2 inline-block">Instagram</a>
       </div>
       <span class="text-white"> | </span>
       <div class="flex flex-col items-center mx-4">
         
 
-        <a href="https://www.facebook.com/profile.php?id=100010366622228" class="text-blue-500 text-[2rem] mx-2 inline-block">Facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=100085450710913" class="text-blue-500 text-[2rem] mx-2 inline-block">Facebook</a>
       </div>
       <span class="text-white"> | </span>
       <span class="text-white"> | </span>
@@ -108,3 +108,35 @@
     </div>
   </section>
 </main>
+
+<!-- One Tap Go Up Button -->
+<button 
+  class="fixed bottom-4 right-4 bg-blur-500 text-white p-3 rounded-full shadow-lg"
+  on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+>
+  ↑
+</button>
+
+<!-- One Tap Go To Section Button -->
+<div class="fixed bottom-20 right-4 space-y-2">
+  <button 
+    class="bg-blur-500 text-white p-2 rounded-full shadow-lg"
+    on:click={() => scrollToSection('profile-section')}
+  >
+    Profile
+  </button>
+  <br>
+  <button 
+    class="bg-blur-500 text-white p-2 rounded-full shadow-lg"
+    on:click={() => scrollToSection('projects-section')}
+  >
+    Projects
+  </button>
+  <br>
+  <button 
+    class="bg-blur-500 text-white p-2 rounded-full shadow-lg"
+    on:click={() => scrollToSection('contacts-section')}
+  >
+    Contacts
+  </button>
+</div>
