@@ -1,7 +1,9 @@
 <script lang="ts">
   import { Button } from 'flowbite-svelte';
-  import { BugSolid } from 'flowbite-svelte-icons';
+  import { BugSolid, GithubSolid, GoogleSolid, LinkedinSolid } from 'flowbite-svelte-icons';
   import '../app.css'; 
+  import { SpeedDial, SpeedDialButton } from 'flowbite-svelte';
+  import { ShareNodesSolid, PrinterSolid, DownloadSolid, FileCopySolid, BullhornSolid } from 'flowbite-svelte-icons';
 
   function scrollToSection(sectionId: string) {
     const section = document.getElementById(sectionId);
@@ -77,34 +79,22 @@
   </section>
 
   <!-- Contacts Section -->
-  <section id="contacts-section" class="my-8 bg-transparent bg-opacity-80 p-4 rounded-lg shadow-lg">
-    <h2 class="text-[4rem] mb-4 font-cambria font-semibold text-center">~CONTACTS~</h2>
-    <p class="text-center text-[2rem]">You can contact me through my socials below!</p>
-    <div class="flex justify-center mt-8">
-      <BugSolid class="h-8 w-8 text-blue-500" />
-      <span class="text-white"> | </span>
-      <span class="text-white"> | </span>
-      <div class="flex flex-col items-center mx-4">
-        
-
-       
-        <a href="https://github.com/BugONSnap" class="text-blue-500 text-[2rem] mx-2 inline-block">GitHub</a>
+  <section id="contacts-section" class="my-8 bg-transparent bg-opacity-80 p-8 rounded-lg shadow-lg">
+    <h2 class="text-[4rem] mb-6 font-cambria font-semibold text-center">~CONTACTS~</h2>
+    <p class="text-center text-[2rem] mb-8">You can contact me through my socials below!</p>
+    <div class="flex justify-center items-center space-x-12">
+      <div class="flex flex-col items-center">
+        <GoogleSolid class="h-10 w-10 text-blue-500 mb-2" />
+        <h1 class="text-white text-[2rem]">xyrdave4@gmail.com</h1>
       </div>
-      <span class="text-white"> | </span>
-      <div class="flex flex-col items-center mx-4">
-
-       
-        <a href="https://www.instagram.com/xaidave/" class="text-blue-500 text-[2rem] mx-2 inline-block">Instagram</a>
+      <div class="flex flex-col items-center">
+        <GithubSolid class="h-10 w-10 text-Grey-500 mb-2" />
+        <a href="https://github.com/BugONSnap" class="text-blue-500 text-[2rem]">GitHub</a>
       </div>
-      <span class="text-white"> | </span>
-      <div class="flex flex-col items-center mx-4">
-        
-
-        <a href="https://www.facebook.com/profile.php?id=100085450710913" class="text-blue-500 text-[2rem] mx-2 inline-block">Facebook</a>
+      <div class="flex flex-col items-center">
+        <LinkedinSolid class="h-10 w-10 text-White-500 mb-2" />
+        <a href="https://www.linkedin.com/in/xyrell-dave-pamintuan-384885295/" class="text-blue-500 text-[2rem]">LinkedIn</a>
       </div>
-      <span class="text-white"> | </span>
-      <span class="text-white"> | </span>
-      <BugSolid class="h-8 w-8 text-blue-500" />
     </div>
   </section>
 </main>
@@ -117,26 +107,15 @@
   ↑
 </button>
 
-<!-- One Tap Go To Section Button -->
-<div class="fixed bottom-20 right-4 space-y-2">
-  <button 
-    class="bg-blur-500 text-white p-2 rounded-full shadow-lg"
-    on:click={() => scrollToSection('profile-section')}
-  >
-    Profile
-  </button>
-  <br>
-  <button 
-    class="bg-blur-500 text-white p-2 rounded-full shadow-lg"
-    on:click={() => scrollToSection('projects-section')}
-  >
-    Projects
-  </button>
-  <br>
-  <button 
-    class="bg-blur-500 text-white p-2 rounded-full shadow-lg"
-    on:click={() => scrollToSection('contacts-section')}
-  >
-    Contacts
-  </button>
-</div>
+<!-- One Tap Go To Section Speed Dial -->
+<SpeedDial defaultClass="fixed bottom-20 right-4">
+  <SpeedDialButton name="Profile" on:click={() => scrollToSection('profile-section')}>
+    <ShareNodesSolid class="w-6 h-6" />
+  </SpeedDialButton>
+  <SpeedDialButton name="Projects" on:click={() => scrollToSection('projects-section')}>
+    <BugSolid class="w-6 h-6" />
+  </SpeedDialButton>
+  <SpeedDialButton name="Contacts" on:click={() => scrollToSection('contacts-section')}>
+    <BullhornSolid class="w-6 h-6" />
+  </SpeedDialButton>
+</SpeedDial>
