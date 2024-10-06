@@ -18,34 +18,19 @@
 </div>
 
 <!-- Header -->
-<header class="relative left-[25%] flex justify-between items-center w-[50%] p-2 bg-transparent text-white" style="z-index: 3;">
-  <div>
-    <!-- svelte-ignore a11y-missing-content -->
-    <h1 class="text-3xl font-cambriafont-semibold"></h1>
-  </div>
-  <div>
-    <Button class=" text-white py-2 px-4 rounded-full mx-2" on:click={() => scrollToSection('profile-section')}></Button>
-    <Button class=" text-white py-2 px-4 rounded-full mx-2" on:click={() => scrollToSection('projects-section')}></Button>
-    <Button class=" text-white py-2 px-4 rounded-full mx-2" on:click={() => scrollToSection('contacts-section')}></Button>
-  </div>
-</header>
-
-<!-- Welcome Section -->
-<section class="welcome-container relative top-[5rem] border-2 border-pink-500 mx-auto my-8 p-5 bg-blur-500 backdrop-blur rounded-lg shadow-lg flex items-center" style="width: 800px; height: 30rem;">
-  <!-- svelte-ignore a11y-img-redundant-alt -->
-  <img src="src/Pics/smile-.png" alt="Profile Image" style="background-image: url('src/Pics/bg1.jpg');"  class="relative top-[-.5vh] left-[59vh] h-[50vh] w-[30vh] rounded-full mr-4">
-  <h2 class="text-white text-2xl font-cambriafont-semibold relative right-[20vh] top-[-1vh]">
-    Good Day! Everyone Im  <br> 
+<header class="welcome-container grid grid-cols-1 gap-4 p-5 border-2 border-pink-500 rounded-lg shadow-lg mx-auto my-8 bg-blur-500 backdrop-blur  ">
+  <img src="src/Pics/smile-.png" alt="Profile picture of Xyrell Dave Pamintuan" class="profile-image rounded-full mx-auto">
+  <h2 class="text-white text-2xl font-cambriafont-semibold text-center">
+    Good Day! Everyone Im <br> 
     <span class="text-[3rem] font-cambria"> Xyrell Dave Pamintuan</span><br> 
-    Im a <span class="text-blue-500">FrontEnd Developer</span> and a <span class="text-blue-500">Cybersecurity Enthusiast</span><br><br>
-
-    <button class=" text-blue-500" on:click={() => scrollToSection('profile-section' )}> Wanna know more about me? </button><br> 
+    Im a <span class="text-blue-500">Gordon College</span> Student and a <span class="text-blue-500">Trial By Fire Enthusiast</span><br><br>
+    <button class="text-blue-500" on:click={() => scrollToSection('profile-section')}> Wanna know more about me? </button><br> 
     <span class="text-white"> What are my </span>
     <button class="text-blue-500" on:click={() => scrollToSection('projects-section')}>Projects? </button><br> 
     <span class="text-white"> What are my </span>
     <button class="text-blue-500" on:click={() => scrollToSection('contacts-section')}>Contacts?</button> 
   </h2>
-</section>
+</header>
 
 <!-- Main Content -->
 <main class="flex flex-col p-4 " style="color:white; z-index: 3;">
@@ -95,28 +80,30 @@
     <h2 class="text-[4rem] mb-4 font-cambria font-semibold text-center">~CONTACTS~</h2>
     <p class="text-center text-[2rem]">You can contact me through my socials below!</p>
     <div class="flex justify-center mt-8">
+      <BugSolid class="h-8 w-8 text-blue-500" />
       <span class="text-white"> | </span>
       <span class="text-white"> | </span>
       <div class="flex flex-col items-center mx-4">
         
-        <BugSolid class="h-8 w-8 text-blue-500" />
-        <span class="text-white text-[1.5rem]">@BugONSnap</span>
+
+       
         <a href="https://github.com/BugONSnap" class="text-blue-500 text-[2rem] mx-2 inline-block">GitHub</a>
       </div>
       <span class="text-white"> | </span>
       <div class="flex flex-col items-center mx-4">
-        <BugSolid class="h-8 w-8 text-blue-500" />
-        <span class="text-white text-[1.5rem]">@xyrell_dave</span>
+
+       
         <a href="https://www.instagram.com/xyrell_dave/" class="text-blue-500 text-[2rem] mx-2 inline-block">Instagram</a>
       </div>
       <span class="text-white"> | </span>
       <div class="flex flex-col items-center mx-4">
-        <BugSolid class="h-8 w-8 text-blue-500" />
-        <span class="text-white text-[1.5rem]">Xyrell Dave</span>
+        
+
         <a href="https://www.facebook.com/profile.php?id=100010366622228" class="text-blue-500 text-[2rem] mx-2 inline-block">Facebook</a>
       </div>
       <span class="text-white"> | </span>
       <span class="text-white"> | </span>
+      <BugSolid class="h-8 w-8 text-blue-500" />
     </div>
   </section>
 </main>
