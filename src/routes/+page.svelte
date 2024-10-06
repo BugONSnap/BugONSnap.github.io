@@ -19,6 +19,7 @@
 
 <!-- Header -->
 <header class="welcome-container grid grid-cols-1 gap-4 p-5 border-2 border-pink-500 rounded-lg shadow-lg mx-auto my-8 bg-blur-500 backdrop-blur  ">
+  <!-- svelte-ignore a11y-img-redundant-alt -->
   <img src="src/Pics/smile-.png" alt="Profile picture of Xyrell Dave Pamintuan" class="profile-image rounded-full mx-auto">
   <h2 class="text-white text-2xl font-cambriafont-semibold text-center">
     Good Day! Everyone Im <br> 
