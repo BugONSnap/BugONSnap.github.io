@@ -4,7 +4,7 @@
   </script>
 
   <main class="flex flex-col p-4 " style="color:white; z-index: 3;">
-    <a href="/profile" class="text-blue-500 text-[2rem]">← Profile</a>
+    <a href="/About" class="text-blue-500 text-[2rem]">← Profile</a>
     
     <!-- Contacts Section -->
     <section id="contacts-section" class="my-8 bg-transparent bg-opacity-80 p-8 rounded-lg shadow-lg">
@@ -27,5 +27,5 @@
       </div>
     </section>
     
-    <a href="/projects" class="text-blue-500 text-[2rem]">Projects →</a>
+    <a href="/Portfolio" class="text-blue-500 text-[2rem]">Projects →</a>
   </main>

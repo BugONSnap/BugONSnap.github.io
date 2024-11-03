@@ -28,15 +28,15 @@
     <span class="text-[3rem] font-cambria"> Xyrell Dave Pamintuan</span><br> 
     Im a <span class="text-blue-500">Gordon College</span> Student and a <span class="text-blue-500">Trial By Fire Enthusiast</span><br><br>
     <button class="text-blue-500">
-      <a href="/profile">Wanna know more about me?</a>
+      <a href="/About">Wanna know more about me?</a>
     </button><br> 
     <span class="text-white"> What are my </span>
     <button class="text-blue-500">
-      <a href="/projects">Projects?</a>
+      <a href="/Portfolio">Projects?</a>
     </button><br> 
     <span class="text-white"> What are my </span>
     <button class="text-blue-500">
-      <a href="/contacts">Contacts?</a>
+      <a href="/Contact">Contacts?</a>
     </button>
   </h2>
 </header>

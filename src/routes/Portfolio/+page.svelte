@@ -29,8 +29,8 @@
         </div>
       </div>
     </section>
-    <a href="/contacts" class="text-blue-500 text-[2rem]">← Contacts</a>
+    <a href="/Contact" class="text-blue-500 text-[2rem]">← Contacts</a>
     <a href="/" class=" text-pink-500 text-[2rem] ">Back to Home</a>
 
-    <a href="/profile" class="text-blue-500 text-[2rem]">Profile →</a>
+    <a href="/About" class="text-blue-500 text-[2rem]">Profile →</a>
   </main>

@@ -3,10 +3,10 @@
 </script>
 
 <main class="flex flex-col p-4 " style="color:white; z-index: 3;">
-    <a href="/projects" class="text-blue-500 text-[2rem]">← Projects</a>
+    <a href="/Portfolio" class="text-blue-500 text-[2rem]">← Projects</a>
     <a href="/" class=" text-pink-500 text-[2rem] ">Back to Home</a>
 
-  <a href="/contacts" class="text-blue-500 text-[2rem]">Contacts →</a>
+  <a href="/Contact" class="text-blue-500 text-[2rem]">Contacts →</a>
   <!-- Profile Section -->
   <section id="profile-section" class=" mb-[20rem] relative top-[5vh] my-8 bg-transparent bg-opacity-80 p-4 rounded-lg shadow-lg">
     <h2 class="text-[4rem] mb-4 font-cambria font-semibold text-center">~PROFILE~</h2>
@@ -22,7 +22,7 @@
     <p class="text-center text-[2rem]">Outside of development, I'm passionate about Souls games and Souls-like titles, with Dark Souls and Elden Ring being some of my favorites. I enjoy the challenge and depth these games offer. I'm also deeply into competitive gaming, always striving to improve and compete at higher levels. Alongside gaming, I'm an avid music addict, constantly exploring new genres and sounds that fuel my creativity and relaxation.</p>
   </section>
 
-  <a href="/projects" class="text-blue-500 text-[2rem]">← Projects</a>
+  <a href="/Portfolio" class="text-blue-500 text-[2rem]">← Projects</a>
   <a href="/" class=" text-pink-500 text-[2rem] ">Back to Home</a>
-  <a href="/contacts" class="text-blue-500 text-[2rem]">Contacts →</a>
+  <a href="/Contact" class="text-blue-500 text-[2rem]">Contacts →</a>
 </main>
