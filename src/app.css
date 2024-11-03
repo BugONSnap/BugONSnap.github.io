@@ -308,3 +308,34 @@ header {
         overflow: hidden;
     }
 }
+
+
+/* Mobile Styles */
+
+@media (max-width: 640px) {
+    .welcome-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        text-align: center;
+    }
+    .welcome-container img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
+/* Tablet Styles */
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .welcome-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5rem;
+    }
+    .welcome-container img {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
